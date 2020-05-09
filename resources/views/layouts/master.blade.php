@@ -66,16 +66,23 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-          <li class="nav-item has-treeview ">
+          <li class="nav-item">
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-cog"></i>
               <p>
-                Starter Pages
+                Management
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link ">
+                <a href="#" class="nav-link active">
                   <i class="fas fa-circle nav-icon"></i>
                   <p>Active Page</p>
                 </a>
@@ -88,6 +95,14 @@
               </li>
             </ul>
           </li>
+
+           <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-user"></i>
+              <p>Profile</p>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link">
               <i class="nav-icon fas fa-power-off text-danger"></i>
@@ -99,6 +114,8 @@
               </form> 
             </a>
           </li>
+
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -115,6 +132,8 @@
     </div>
   </div>
   <!-- /.content-wrapper -->
+
+
 
   <!-- Main Footer -->
   <footer class="main-footer">
